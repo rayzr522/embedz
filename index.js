@@ -68,7 +68,7 @@ bot.on('message', message => {
     }
 
     message.delete();
-    if (!message.member.hasPermission("EMBED_LINKS")) {
+    if (message.member && !message.member.hasPermission("EMBED_LINKS")) {
         console.error(`Tried to embed, but was cancelled due to lack of permissions:\n${content}`);
         return;
     }
