@@ -1,0 +1,12 @@
+{
+  "name": "embedz",
+  "version": "1.0.0",
+  "description": "A selfbot simply for making embeds",
+  "main": "index.js",
+  "repository": "https://github.com/Rayzr522/embedz.git",
+  "author": "Rayzr522 <rayzr522@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
