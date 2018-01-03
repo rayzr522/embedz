@@ -6,6 +6,9 @@
   "repository": "https://github.com/Rayzr522/embedz.git",
   "author": "Rayzr522 <rayzr522@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
   "dependencies": {
     "discord.js": "^11.2.1"
   }
