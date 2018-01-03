@@ -21,8 +21,6 @@ module.exports = content => {
             label = '';
         }
 
-        console.log(content);
-
         while (index < content.length - 1) {
             let next = content[++index];
 
@@ -51,7 +49,9 @@ module.exports = content => {
         if (!closed) {
             throw 'Missing closing bracket for options!';
         }
+
+        index++;
     }
 
-    return { options, remainder: content.substr(index + 1) };
+    return { options, remainder: content.substr(index) };
 };

@@ -1,8 +1,8 @@
 {
     "prefix": "e:",
     "token": "",
-    "embedSettings": {
-        "defaultColor": [
+    "embedDefaults": {
+        "color": [
             28,
             23,
             26
