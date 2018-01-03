@@ -25,7 +25,7 @@ const parseEmbed = content => {
     let parsed = parser(content);
 
     // TODO: Improve this, actually make it parse things.
-    let options = Object.assign(config.embedDefaults, parsed.options);
+    let options = Object.assign({}, config.embedDefaults, parsed.options);
 
     if (options.color && /^[a-f0-9]{3}$/i.test(options.color)) {
         options.color = options.color.split('').map(c => c + c).join('');
